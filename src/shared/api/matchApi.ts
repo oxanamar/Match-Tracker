@@ -1,5 +1,5 @@
 import axios from "axios";
-import { MatchesResponse } from "@/entities/match/types";
+import { MatchesResponse } from "../../entities/match/types";
 
 const BASE_URL = "https://app.ftoyd.com/fronttemp-service";
 
