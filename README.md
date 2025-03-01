@@ -1,50 +1,82 @@
-# React + TypeScript + Vite
+# Match Tracker ⚽️⏳
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+<p>
+Match Tracker is a web app for real-time match tracking and score updates. It provides a clean, responsive UI to display live scores, match statuses, and key game details. Built with modern frontend technologies, it ensures smooth performance across devices, making it easy to follow ongoing and upcoming matches.
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img width="986" alt="matchtracker" src="https://github.com/user-attachments/assets/4d4e95c3-1895-47d1-b2aa-d5ddb3ce5f7a" />
+</div>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## ✨ Features
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Live Match Tracking**:  
+  Stay updated with real-time match scores and statuses. Matches are automatically updated without manual intervention.
+
+- **Refresh Button for Instant Updates**:  
+  Users can manually refresh match results with a dedicated refresh button, ensuring they get the latest scores at any moment.
+
+- **Error Handling with Alerts**:  
+  If match data fails to load, a clear error message is displayed, along with an option to retry fetching data.
+
+- **Loading Indicator**:
+  A smooth loading animation is shown when fetching match data, enhancing user experience.
+
+- **Modern UI with Responsive Design**:
+  Built with a sleek, dark theme, ensuring a visually appealing experience across all devices, from desktops to mobile screens.
+  
+
+## 🛠️ Tech Stack
+
+### **Frontend**
+
+- **React.js:**  
+  Used for building dynamic, reusable, and interactive UI components.
+
+- **TypeScript:**  
+  Enhances type safety and improves code maintainability.
+
+- **Styled Components:**  
+  Provides scoped CSS styling for cleaner and more modular design.
+
+- **CSS Modules:**  
+  Scoped CSS for styling components, ensuring no global namespace conflicts.
+
+- **Axios:**  
+  Handles HTTP requests efficiently to fetch live match data.
+
+
+## 🚀 Installation and Setup
+
+#### Step 1: Clone the Repository
+Clone the project to your local machine using the following command:
+
+```bash
+git clone https://github.com/oxanamar/Match-Tracker.git
+cd Match-Tracker
+
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+#### Step 2: Install dependencies
+Navigate to the project directory and install all necessary dependencies:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+#### Step 3: Start the development server
+Run the following command to start the application locally:
+
+```bash
+npm run dev
+```
+
+#### Step 4: Open the Messenger App
+Go to http://localhost:5173/ (or the URL shown in your terminal) to start using the Match Tracker app! 🎉
+
+<br><br>
+
+Thank you for exploring this project! If you find it useful, consider giving it a ⭐️ or suggesting improvements! 🙌🏻
